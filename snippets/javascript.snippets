@@ -1,5 +1,5 @@
 # Anonymous Function
-snippet f
+snippet fn
 	function(${1}) {${2}}
 snippet ait
 	it("${1}", function(done) {
@@ -15,10 +15,6 @@ snippet desc
 	});
 snippet cl
 	console.log("${1}", ${2});
-snippet con
-	context("${1}", function() {
-		${2}
-	});
 snippet bef
 	beforeEach(function() {
 		${1}
@@ -27,7 +23,3 @@ snippet frr
 	function(req,res,next) {
 		${1}
 	});
-snippet seq
-	sequelize
-snippet Seq
-	Sequelize

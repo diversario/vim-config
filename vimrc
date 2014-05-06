@@ -57,8 +57,8 @@ endif
 
 set cursorcolumn
 set cursorline
-hi CursorLine cterm=NONE ctermbg=238
-hi CursorColumn cterm=NONE ctermbg=238
+hi CursorLine cterm=NONE ctermbg=232
+hi CursorColumn cterm=NONE ctermbg=232
 
 "set foldlevel=3
 "set foldnestmax=2
@@ -79,3 +79,9 @@ inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 set fileformat=unix
+
+let g:JSHintHighlightErrorLine = 0
+
+" JSBeautify
+autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
+autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
