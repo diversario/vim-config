@@ -47,3 +47,10 @@
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule "bundle/jshint"]
+	path = bundle/jshint.vim
+	url = https://github.com/wookiehangover/jshint.vim.git
+[submodule "bundle/jsbeautify"]
+	path = bundle/vim-jsbeautify
+	url = https://github.com/maksimr/vim-jsbeautify.git
+
