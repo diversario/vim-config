@@ -85,3 +85,6 @@ let g:JSHintHighlightErrorLine = 0
 " JSBeautify
 autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
 autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
+
+let g:indentLine_color_term = 237
+let g:indentLine_char = '│'

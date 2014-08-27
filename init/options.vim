@@ -73,3 +73,7 @@ autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or M
 if has("gui_running")
   set noballooneval
 endif
+
+set clipboard=unnamed
+set undofile
+set undodir=~/.vimundo
