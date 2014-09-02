@@ -75,5 +75,7 @@ if has("gui_running")
 endif
 
 set clipboard=unnamed
-set undofile
 set undodir=~/.vimundo
+set undofile
+set undolevels=1000
+set undoreload=10000
