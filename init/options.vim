@@ -79,3 +79,6 @@ set undodir=~/.vimundo
 set undofile
 set undolevels=1000
 set undoreload=10000
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
+highlight clear SignColumn
