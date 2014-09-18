@@ -82,3 +82,5 @@ set undoreload=10000
 let g:gitgutter_realtime = 1
 let g:gitgutter_eager = 1
 highlight clear SignColumn
+set term=screen-256color
+autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml,*.pl,*.pm,*.PL set nolist
