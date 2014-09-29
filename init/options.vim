@@ -84,3 +84,4 @@ let g:gitgutter_eager = 1
 highlight clear SignColumn
 set term=screen-256color
 autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml,*.pl,*.pm,*.PL set nolist
+autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml set filetype=mason
