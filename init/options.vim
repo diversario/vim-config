@@ -85,3 +85,9 @@ highlight clear SignColumn
 set term=screen-256color
 autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml,*.pl,*.pm,*.PL set nolist
 autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml set filetype=mason
+
+if expand('%:p:h') =~ "ecommerce-api"
+  set shiftwidth=4
+  set softtabstop=4
+  set tabstop=4
+endif
