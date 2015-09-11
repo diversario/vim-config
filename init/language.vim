@@ -39,3 +39,9 @@ autocmd FileType ruby imap  <Space>=><Space>
 
 " Open all folds in Markdown.
 autocmd FileType mkd normal zR
+
+if did_filetype() " filetype already set..
+  finish    " ..don't do these checks
+elseif getline(20) =~ 'Test::Nginx::Socket'
+  setfiletype testngx
+endif
