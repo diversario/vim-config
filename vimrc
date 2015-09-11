@@ -89,3 +89,5 @@ autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
 let g:indentLine_color_term = 237
 let g:indentLine_char = '│'
 highlight clear SignColumn
+
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
