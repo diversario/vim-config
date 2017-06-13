@@ -37,13 +37,13 @@ runtime! init/**.vim
 silent! source ~/.vimrc.local
 
 
-set background=dark
 "set background=light
+set background=dark
 "set mouse-=a
 "let g:solarized_termcolors=16
 if has('gui_running')
   colorscheme solarized
-  set background=dark
+  set background=light
   set guifont=Source\ Code\ Pro\ 9
 endif
 

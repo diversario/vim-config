@@ -91,3 +91,5 @@ if expand('%:p:h') =~ "ecommerce-api"
   set softtabstop=4
   set tabstop=4
 endif
+
+set ic "Case-insensitive search
