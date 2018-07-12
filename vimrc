@@ -91,3 +91,4 @@ let g:indentLine_color_term = 237
 highlight clear SignColumn
 
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
+set lazyredraw

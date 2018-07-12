@@ -38,8 +38,6 @@ set cursorline                  " Highlight current line
 
 " More detailed status line
 set statusline=[%n]\ %f\ %m\ %y
-set statusline+=%{fugitive#statusline()} " Show git details"
-set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''} " Show RVM details"
 set statusline+=%w              " [Preview]
 set statusline+=%=              " Left/right separator
 set statusline+=%c,             " Cursor column
@@ -83,13 +81,6 @@ let g:gitgutter_realtime = 1
 let g:gitgutter_eager = 1
 highlight clear SignColumn
 set term=screen-256color
-autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml,*.pl,*.pm,*.PL set nolist
-autocmd BufNewFile,BufRead *.md,*.mh,*.mhtml set filetype=mason
-
-if expand('%:p:h') =~ "ecommerce-api"
-  set shiftwidth=4
-  set softtabstop=4
-  set tabstop=4
-endif
 
 set ic "Case-insensitive search
+let g:terraform_align=1
